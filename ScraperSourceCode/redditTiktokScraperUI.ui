@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1100</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1100</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Lab 1 - Data Collection</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="mainVerticalLayout">
+   <property name="minimumSize">
+    <size>
+     <width>1100</width>
+     <height>700</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1100</width>
+     <height>700</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#mainVerticalLayout {
+	background-color: rgba(46, 47, 56, 0.8);
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>30</number>
+    </property>
+    <property name="leftMargin">
+     <number>30</number>
+    </property>
+    <property name="topMargin">
+     <number>50</number>
+    </property>
+    <property name="rightMargin">
+     <number>30</number>
+    </property>
+    <property name="bottomMargin">
+     <number>30</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="scrapeFromRedditButton">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#scrapeFromRedditButton  {
+    background-color: #4E4F5A; 
+    border: 2px solid lightgray;  
+    border-radius: 10px;         
+    padding: 5px;              
+    font-size: 14px; 
+	font-weight: bold;          
+    color: #f3f3f3;       
+}
+
+#scrapeFromRedditButton:hover {
+    background-color: #464751; 
+	border-color: #D7D7D7;
+}
+
+#scrapeFromRedditButton:pressed {
+    background-color: #383840; 
+	border-color:#D7D7D7;
+}</string>
+        </property>
+        <property name="text">
+         <string>Scrape from Reddit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="scrapeFromTikTokButton">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#scrapeFromTikTokButton  {
+    background-color: #4E4F5A; 
+    border: 2px solid lightgray;  
+    border-radius: 10px;         
+    padding: 5px;              
+    font-size: 14px; 
+	font-weight: bold;          
+    color: #f3f3f3;       
+}
+
+#scrapeFromTikTokButton:hover {
+    background-color: #464751; 
+	border-color: #D7D7D7;
+}
+
+#scrapeFromTikTokButton:pressed {
+    background-color: #383840; 
+	border-color:#D7D7D7;
+}</string>
+        </property>
+        <property name="text">
+         <string>Scrape from TikTok</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="showResultsFromRedditButton">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#showResultsFromRedditButton  {
+    background-color: #4E4F5A; 
+    border: 2px solid lightgray;  
+    border-radius: 10px;         
+    padding: 5px;              
+    font-size: 14px; 
+	font-weight: bold;          
+    color: #f3f3f3;       
+}
+
+#showResultsFromRedditButton:hover {
+    background-color: #464751; 
+	border-color: #D7D7D7;
+}
+
+#showResultsFromRedditButton:pressed {
+    background-color: #383840; 
+	border-color:#D7D7D7;
+}</string>
+        </property>
+        <property name="text">
+         <string>Show Results from Reddit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="showResultsFromTikTokButton">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#showResultsFromTikTokButton  {
+    background-color: #4E4F5A; 
+    border: 2px solid lightgray;  
+    border-radius: 10px;         
+    padding: 5px;              
+    font-size: 14px; 
+	font-weight: bold;          
+    color: #f3f3f3;       
+}
+
+#showResultsFromTikTokButton:hover {
+    background-color: #464751; 
+	border-color: #D7D7D7;
+}
+
+#showResultsFromTikTokButton:pressed {
+    background-color: #383840; 
+	border-color:#D7D7D7;
+}</string>
+        </property>
+        <property name="text">
+         <string>Show Results from TikTok</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="resultsLabel">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#resultsLabel {
+	color: #f3f3f3;
+}</string>
+        </property>
+        <property name="text">
+         <string>Results:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="resultsTableWidget">
+        <property name="styleSheet">
+         <string notr="true">#resultsTableWidget {
+	background-color: #f3f3f3;
+    border: 2px solid lightgray;  
+    border-radius: 10px;         
+    padding: 2px;              
+    font-size: 14px; 
+    color: black;
+}</string>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOn</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOn</enum>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustIgnored</enum>
+        </property>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>New Column</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>username</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>message</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>timestamp</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>user1</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>this is a tweet</string>
+         </property>
+        </item>
+        <item row="0" column="2">
+         <property name="text">
+          <string>41</string>
+         </property>
+        </item>
+        <item row="0" column="3">
+         <property name="text">
+          <string>link goes here</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
